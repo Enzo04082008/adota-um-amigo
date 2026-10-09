@@ -1,5 +1,11 @@
 # React + Vite
 
+## Publicação
+
+No Netlify, `netlify.toml` configura a compilação com `npm run build` e a publicação da pasta `dist`. Os arquivos JavaScript e as imagens usam o caminho base `/`, pois o site é servido na raiz do domínio.
+
+O workflow existente do GitHub Pages mantém o caminho base `/adota-um-amigo/` quando `GITHUB_ACTIONS=true`. Assim, cada plataforma carrega os arquivos no endereço correto, evitando a tela branca causada por caminhos incompatíveis.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
